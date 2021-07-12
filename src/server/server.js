@@ -3,6 +3,8 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const fetch = require('node-fetch');
 const userName = "rsaddique";
+API_KEY_IMAGES = '22275089-7160855d31b5a4850f4f9b574';
+API_KEY_WEATHERBIT = '003cc4d30ca849d18e8cd717c7a65f97';
 
 var path = require('path')
 const express = require('express');
