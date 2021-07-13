@@ -39,7 +39,7 @@ app.listen(3000, function () {
 // })
 app.post('/city', async (req, res)=>{
     console.log('Hello',req.body)
-    const cityName = req.body?.formText;
+    const cityName = req.body.formText;
    
     const lang= 'en';
     const response = await fetch(`http://api.geonames.org/searchJSON?q=${cityName}&maxRows=1&username=${userName}`)
