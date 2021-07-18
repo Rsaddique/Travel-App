@@ -9,18 +9,14 @@
 <body>
     <header class="header">
           <img class="logo-pic" src="/src/client/media/pngtree-travel-logo-template-simple-and-minimalist-png-image_5257827.jpeg" width="8%">
-                  <h1>Fun-Travel</h1>
-          <!-- <form action="submit">
-              <input type="email" placeholder="yours@email.com">
-              <button>Signup</button>
-          </form> -->
+                  <p class="heading">Fun-Travel</p>
     </header>
     <section class="section" style="overflow: scroll;">
         <div class="form">
             <center>
                 <form>
                     <input type="text" name="sectionbar"  class="sectionbar" placeholder="Enter destination here"/><br>
-                    <input type="date" name="departure" class="Departure date" placeholder="Departure date"/><br>
+                    <input type="date" name="departure" class="Departure" placeholder="Departure date"/><br>
                     <button type="submit" class="search">Search</button>
                 </form>
             </center>
@@ -49,6 +45,12 @@
         </ul>
         <p>&copy; All rights reserved by fun travel</p>
     </footer>
-    
+    <script> 
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+    </script>
 </body>
 </html>

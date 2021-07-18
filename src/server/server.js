@@ -120,3 +120,4 @@ const picture = hits.map(({previewURL}) =>  {
 })
     
 
+module.exports={app}

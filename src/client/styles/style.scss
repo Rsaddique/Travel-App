@@ -8,6 +8,10 @@ body {
     background-color: rgb(209, 160, 131);
     height: auto;
     padding: 5px;
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+}
 .logo-pic {
     border: 1px solid transparent;
     border-radius: 30px;
@@ -71,5 +75,47 @@ footer {
     p {
         text-align: right;
         margin-right: 3px;
+    }
+}
+@media(max-width: 487px) {
+    .header {
+        .heading{
+            font-size: 15px;
+        }
+        .logo-pic{
+            width: 8%;
+            height: 10%;
+        }
+    }
+    .section {
+        .sectionbar {
+         width: 15em;
+         height: 1.5em;
+        }
+        .Departure {
+            width: 15em;
+            height: 1.5em;
+           }
+    }
+}
+@media(min-width: 488px) and (max-width: 795px) {
+    .header {
+        .heading{
+            font-size: 30px;
+        }
+        .logo-pic{
+            width: 15%;
+            height: 20%;
+        }
+    }
+    .section {
+        .sectionbar {
+         width: 18em;
+         height: 1.5em;
+        }
+        .Departure {
+            width: 18em;
+            height: 1.5em;
+           }
     }
 }
